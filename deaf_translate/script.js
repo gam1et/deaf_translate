@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		var img = document.createElement('img');
 		img.classList.add('img');
-		img.src = 'img/words/'+decodeURI(val.static)+'.jpg';
+		img.src = 'img/words/'+val.static.toUpperCase()+'.jpg';
 
 		container.appendChild(img);
 		container.appendChild(subtitle);
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 			var img = document.createElement('img');
 			img.classList.add('img');
-			img.src = 'img/letters/'+decodeURI(val[i])+'.jpg';
+			img.src = 'img/letters/'+val[i].toUpperCase()+'.jpg';
 
 			container.appendChild(img);
 			container.appendChild(subtitle);
