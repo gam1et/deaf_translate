@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		var img = document.createElement('img');
 		img.classList.add('img');
-		img.src = 'img/words/'+val.static.toUpperCase()+'.jpg';
+		img.src = 'img/words/'+val.static.toLowerCase()+'.jpg';
 
 		container.appendChild(img);
 		container.appendChild(subtitle);
